@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -43,8 +44,8 @@
                 serif: ['Merriweather', 'serif'],
               },
               screens: {
+                'md': '430px',
                 'sm': '488px',
-                'md': '768px',
                 'lg': '992px',
                 'xl': '1200px',
                 '2xl': '1440px',
@@ -69,15 +70,16 @@
         <div class="2xl:container px-xxl">
           <nav class="flex justify-between pt-5 pb-8">
             <ul><img src="./images/DudeShape (1).svg" alt="logo"></ul>
-            <ul class="flex gap-12">
+            <ul class="flex gap-12 z-[-1] md:z-auto md:static absolute full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 tom-[-400px] transition-all ease-in duration-500">
               <li class="hover:text-gray hover:border-b"><a href="#"> Home</a></li>
               <li class="hover:text-gray hover:border-b"><a href="#"> About</a></li>
               <li class="hover:text-gray hover:border-b"><a href="#"> Features</a></li>
               <li class="hover:text-gray hover:border-b"><a href="#"> Contact</a></li>
             </ul>
-            <ul class="flex gap-8">
+            <ul class="flex gap-8">            
               <li><img class="cursor-pointer" src="./images/loupe.svg" alt="lopa"></li>
-              <li><img class="cursor-pointer" src="./images/burger.svg" alt="burger"></li>
+              <ion-icon name="menu-outline" class="cursor-pointer text-3xl"></ion-icon>
+              <!-- <li><img class="cursor-pointer" src="./images/burger.svg" alt="burger"></li> -->
             </ul>
           </nav>
         </div>
