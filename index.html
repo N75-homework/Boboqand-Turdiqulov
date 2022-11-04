@@ -4,24 +4,300 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray: '#154444',
+              opgray: '#244D4D0',
+              opacity:'#DEE4E2',
+              bag: '#D6D6D6',
+              white: '#FFFFFF',
+              blue: '#6760a8',
+              le:'#919090',
+              for:'#F4F6F6',
+              bt:'#305F64;',
+              yellow:'#FFB624',
+              bor:'#407980',
 
+            },
+            spacing: {
+                xsm: '3px',
+                sm: '7px',
+                lg: '20px',
+                sxl: '56px',
+                xxl: '120px',
+                
+              },
+              borderRadius: {
+                'xl4': '2rem',
+                '50%': '50%',
+                '8': '8px'
+              },
+              fontFamily: {
+                sans: ['Graphik', 'sans-serif'],
+                serif: ['Merriweather', 'serif'],
+              },
+              screens: {
+                'sm': '488px',
+                'md': '768px',
+                'lg': '992px',
+                'xl': '1200px',
+                '2xl': '1440px',
+              },
+              width: {
+                  'we': '488px',
+                  'xm': '671px',
+                  '70%':'70%',
+                  '30%':'30%',
+                  'sub':'430px',
+                  'te':'271px',
               }
-            }
+              
           }
         }
-      </script>
-    <title>Homework4</title>
-</head>
-<body>
+      }
+    </script> 
 
-    <H4>HELOO</H4>
+    </head>
+<body>
+    <header class="bg-bag">
+        <div class="2xl:container px-xxl">
+          <nav class="flex justify-between pt-5 pb-8">
+            <ul><img src="./images/DudeShape (1).svg" alt="logo"></ul>
+            <ul class="flex gap-12">
+              <li class="hover:text-gray hover:border-b"><a href="#"> Home</a></li>
+              <li class="hover:text-gray hover:border-b"><a href="#"> About</a></li>
+              <li class="hover:text-gray hover:border-b"><a href="#"> Features</a></li>
+              <li class="hover:text-gray hover:border-b"><a href="#"> Contact</a></li>
+            </ul>
+            <ul class="flex gap-8">
+              <li><img class="cursor-pointer" src="./images/loupe.svg" alt="lopa"></li>
+              <li><img class="cursor-pointer" src="./images/burger.svg" alt="burger"></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main class="bg-bag ">
+
+      <div class="2xl:container px-xxl mb-36">
+        <div class="flex">
+            <div class="w-30%">
+              <img src="./images/chair.png" alt="chair">
+            </div>
+            <div class="bg-gray p-24 w-70%">
+              <h1 class="text-6xl text-white mb-5 max-w-xm">We Help You Make  Modern Furniture</h1>
+              <p class="text-xl max-w-we text-white mb-10">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials </p>
+              <button class="bg-white btn btn-out pt-2 pb-2 pl-5 pr-5 hover:rounded-8 hover:bg-blue text-gray">Explore More</button>
+            </div>
+        </div>
+      </div>  
+
+
+      <div class="2xl:container px-xxl mb-36">
+          <h2 class="text-center text-4xl text-opgray mb-12">Trusted by 20,000+ companies</h2>
+          <div class="flex gap-24 justify-center mb-36">
+            <div><img src="./images/companies1.svg" alt="company"></div>
+            <div><img src="./images/companies2.svg" alt="company"></div>
+            <div><img src="./images/companies3.svg" alt="company"></div>
+            <div><img src="./images/companies4.svg" alt="company"></div>
+            <div><img src="./images/companies5.svg" alt="company"></div>
+            <div><img src="./images/companies6.svg" alt="company"></div>
+          </div>
+          <div class="flex justify-between items-center ">
+            <div class="">
+              <img src="./images/room.png" alt="room">
+            </div>
+            <div >
+              <h2 class="text-4xl mb-5">About Us</h2>
+              <p class="max-w-md text-xl mb-10">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials </p>
+              <div class="flex gap-8 mb-8 items-start">
+                <img src="./images/quality.svg" alt="quality">
+                <div class="">
+                  <h4 class="mb-3  text-xl text-opgray">Best Quality</h4>
+                  <p class="w-te">All of our furniture uses the best materials and choices</p>
+                </div>
+              </div>
+              <div class="flex gap-8 mb-8 items-start">
+                <img src="./images/secure.svg" alt="secure">
+                <div class="">
+                  <h4 class="mb-3  text-xl text-opgray">100% Secure</h4>
+                  <p class="w-te">All of our furniture uses the best materials and choices</p>
+                </div>
+              </div>
+              <div class="flex gap-8 mb-8 items-start">
+                <img src="./images/shpping.svg" alt="free">
+                <div>
+                  <h4 class="mb-3  text-xl text-opgray">Free Shpping</h4>
+                  <p class="w-te">All of our furniture uses the best materials and choices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="2xl:container px-xxl mb-36">
+        <h2 class="text-4xl mb-5">Our Popular Furniture</h2>
+        <p class="text-xl max-w-3xl mb-20">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices for our customers.</p>
+        <div class="flex gap-8 justify-center">
+          <div class="bg-white shadow-slate-50 ">
+            <img src="./images/chair1.png" class="mb-8" alt="chair">
+            <div class="flex justify-between mb-5 py-5 px-6">
+              <h4>White Swan Chair </h4>
+              <div class="flex gap-4">
+                <img src="./images/like.svg" alt="link">
+                <img src="./images/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="flex justify-between py-5 px-6">
+              <ins>$40</ins>
+              <button class="btn bg-gray px-4  py-1 hover:bg-opgray text-white">Buy Now</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-slate-50 ">
+            <img src="./images/chair2.png" class="mb-8" alt="chair">
+            <div class="flex justify-between mb-5 py-5 px-6">
+              <h4>White Swan Chair </h4>
+              <div class="flex gap-4">
+                <img src="./images/like.svg" alt="link">
+                <img src="./images/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="flex justify-between py-5 px-6">
+              <ins>$40</ins>
+              <button class="btn bg-gray px-4  py-1 hover:bg-opgray text-white">Buy Now</button>
+            </div>
+          </div>
+          <div class="bg-white shadow-slate-50">
+            <img src="./images/chair3.png" class="mb-8" alt="chair">
+            <div class="flex justify-between mb-5 py-5 px-6">
+              <h4>White Swan Chair </h4>
+              <div class="flex gap-4">
+                <img src="./images/like.svg" alt="link">
+                <img src="./images/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="flex justify-between py-5 px-6">
+              <ins>$40</ins>
+              <button class="btn bg-gray px-4  py-1 hover:bg-opgray text-white">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="2xl:container px-xxl mb-36 ">
+          <h2 class="text-4xl text-center mb-5 ">All Furniture</h2>
+          <ul class="flex justify-center gap-24 mb-20">
+            <li class="text-le hover:text-gray text-2xl  hover:border-b-2 hover:duration-500 mb-2">Shop By Room</li>
+            <li class="text-le hover:text-gray text-2xl hover:border-b-2 hover:duration-500 mb-2">Shop By Category</li>
+            <li class="text-le hover:text-gray text-2xl hover:border-b-2 hover:duration-500 mb-2">Shop By Style</li>
+          </ul>
+          <div class="flex  gap-7 items-center justify-between mb-36">
+            <img src="./images/chaires.png" alt="chair">
+            <div>
+              <div class="mb-7 text-center py-4 px-16 bg-white  ">
+                <img src="./images/furn1.svg" class="mb-4" alt="img">
+                <span>Living Room</span>
+              </div>
+              <div class="mb-7 text-center py-4 px-16 bg-white">
+                <img src="./images/furn2.svg" class="mb-4" alt="img">
+                <span>Dining Room</span>
+              </div>
+              <div class="mb-7 text-center py-4 px-16 bg-white">
+                <img src="./images/furn3.svg" class="mb-4" alt="img">
+                <span>Bed Room</span>
+              </div>
+            </div>
+            <div>
+              <div class="mb-7 text-center py-4 px-16 bg-white">
+                <img src="./images/furn4.svg" class="mb-4" alt="img">
+                <span>Kitchen</span>
+              </div>
+              <div class="mb-7 text-center py-4 px-16 bg-white">
+                <img src="./images/furn5.svg" class="mb-4 bg-black" alt="img">
+                <span>Office</span>
+              </div>
+              <div class="mb-7 text-center py-4 px-16 bg-white">
+                <img src="./images/furn6.svg" class="mb-4" alt="img">
+                <span>Hallway</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-24 items-center">
+            <div class="w-1/2"><img src="./images/table.png" alt="table"></div>
+            <div class="w-1/2">
+              <h2 class="text-4xl mb-5 ">Our customers are verry importan to us</h2>
+              <p class="text-xl mb-10 ">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices for our customers.</p>
+              <img src="./images/jibon.svg" alt="man">
+            </div>
+          </div>
+      </div>
+
+
+      <div class="2xl:container px-xxl mb-36 bg-for pt-16 pb-14 mx-auto">
+          <h2 class="text-4xl text-center mb-5">Subscribe to get the latest news about us</h2>
+          <p class=" text-center mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> eiusmod tempor incididunt ut labore at dolore.</p>
+          <form class="flex justify-center">
+              <input class="py-4 px-6"  type="email" placeholder="Enter your email">
+              <button class="btn text-white py-4 px-6 bg-bt">Register</button>
+          </form>
+      </div>
+    </main>
+    <footer class="bg-bt ">
+        <div class="2xl:container px-xxl   py-24">
+          <div class="flex justify-between">
+            <div class="w-1/3">
+              <img src="./images/DudeShape (1).svg" class="mb-5 bg-white  " alt="logo">  
+              <p class="mb-4 w-1/2 text-white">Lorem ipsum dolor sit amet, conse
+                ctetur adipiscing elit, sed eiusmod tempor incididunt ut labore .</p>
+                <span class="text-white ">Follow Us :</span><br>
+                <div class="flex gap-4 mt-4">
+                  <a href="#"><img src="./images/facebook.svg" alt="icon"></a>
+                  <a href="#"><img src="./images/twitter.svg" alt="icon"></a>
+                  <a href="#"><img src="./images/instagram.svg" alt="icon"></a>
+                  <a href="#"><img src="./images/youtube.svg" alt="icon"></a>
+                </div>
+            </div>
+            <div class="">
+              <ul>
+                <li> <h3 class="text-3xl text-white mb-6 ">Take a tour</h3></li>
+                <li class="mb-4 text-white"><a href="#">Features</a></li>
+                <li class="mb-4 text-white"><a href="#">Pricing</a></li>
+                <li class="mb-4 text-white"><a href="#">Product</a></li>
+                <li class="mb-4 text-white"><a href="#">Support</a></li>
+                
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li> <h3 class="text-3xl text-white mb-5">Our company</h3></li>
+                <li class="mb-4 text-white"><a href="#">About Us</a></li>
+                <li class="mb-4 text-white"><a href="#">Blog</a></li>
+                <li class="mb-4 text-white"><a href="#">Media</a></li>
+                <li class="mb-4 text-white"><a href="#">Contact Us</a></li>
+
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-3xl text-white mb-5">Subscribe</h3>
+              <p class="text-white w-60 mb-10">Subscribe to get the latest news from us</p>
+              <form  class="flex">
+                <input type="email" class="py-3 px-5" placeholder="Email Address">
+                <button class="py-2 px-2 bg-yellow rounded-50% "><img  src="./images/right.svg" alt="right"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center py-5 border-t border-bor">
+          <a class="text-white" href="#">Copyright @ 2021. Crafted with love.</a>
+        </div>
+    </footer>
 </body>
 </html>
