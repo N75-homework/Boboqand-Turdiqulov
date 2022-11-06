@@ -4,9 +4,9 @@ var noo = 'Siz tanlagan OTM ga oqishga tavsiya etilmadiz';
 var erro = 'Siz notgri malumot kiritdingiz';
 var firstName = prompt('Ismingizni kiriting');
 
-var OTM = prompt('OTM lar dan birini tanlang: 1.TDIU 2.TDMI 3.MU');
+var OTM = prompt(firstName + ' OTM lar dan birini tanlang: 1.TDIU 2.TDMI 3.MU');
 
-var ball = prompt( firstName, 'balingizni kiriting:');
+var ball = prompt( firstName + ' balingizni kiriting:');
 
 if (OTM == 1){
     if(ball >= 150){
